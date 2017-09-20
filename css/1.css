@@ -1,0 +1,48 @@
+table{
+  width:700px;
+}
+td:first-child{
+  width:60px;
+}
+td:nth-child(2){
+  width:200px;
+}
+td span{
+  color:red;
+}
+
+/*页面初始，验证消息不显示*/
+.vali_info{
+  display:none;
+}
+
+/*当文本框获得焦点时穿上边框class*/
+.txt_focus{
+  border-top:2px solid black;
+  border-left:2px solid black;
+}/*当文本框失去焦点时脱下*/
+
+/*验证消息的通用样式*/
+.vali_success,.vali_fail{
+  background-repeat:no-repeat;
+  background-position:left center;
+  display:block;
+}
+
+/*验证消息：验证通过时的样式*/
+.vali_success{
+  padding-left:20px;
+  background-image:url('../img/ok.png');
+  width:0;
+  height:20px;
+  overflow:hidden;
+}
+
+/*验证消息：验证失败时的样式*/
+.vali_fail{
+  padding-left:30px;
+  background-image:url('../img/err.png');
+  border:1px solid red;
+  background-color:#ddd;
+  color:red;
+}
